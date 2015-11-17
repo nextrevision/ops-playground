@@ -18,3 +18,16 @@ To interrogate the config of each switch:
 
     mininet> s1 vtysh
     mininet> s2 vtysh
+
+## lldp
+
+This example configures LLDP on two hosts connected by four links. Only the first link is configured, the remaining links are shutdown (you can enable them manually).
+
+To run, login to the Vagrant VM and execute the following:
+
+    sudo python /vagrant/examples/lldp.py
+
+It will take about 30 seconds for the discovery to take place, but then you can login to the OPS CLI and issue some show commands:
+
+    mininet> s1 vtysh
+    s1# show lldp neighbor 1
