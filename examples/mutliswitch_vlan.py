@@ -39,7 +39,7 @@ class myTopo(Topo):
         self.addLink('s1', 's2')
         self.addLink('s1', 's2')
 
-class myNetwork( OpsVsiTest ):
+class myNetwork(OpsVsiTest):
 
     """override the setupNet routine to craete custom Topo.
     pass the global variables switch,host,link to mininet topo
