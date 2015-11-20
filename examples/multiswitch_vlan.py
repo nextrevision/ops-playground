@@ -41,7 +41,7 @@ class myTopo(Topo):
 
 class myNetwork(OpsVsiTest):
 
-    """override the setupNet routine to craete custom Topo.
+    """override the setupNet routine to create custom Topo.
     pass the global variables switch,host,link to mininet topo
     as VsiOpenSwitch, Host, OpsVsiLink
     """
